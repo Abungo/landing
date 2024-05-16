@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abungo Thokchom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #343C40;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #2C3E50;
+            color: #ECF0F1;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        .name {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+        }
+        
+        nav {
+            width: 100%;
+            background-color: #3498DB;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            background-color: #91A5BA;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+            font-size: 5vw; /* Font size scales with viewport width */
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #ECF0F1;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #E74C3C;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        .about {
+            background-image: url('profile.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ECF0F1;
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+        }
+        
+        .about::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(44, 62, 80, 0.4); /* Adjusted opacity */
+            border-radius: 15px;
+        }
+        
+        .about-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about h2, .about p {
+            background: rgba(0, 0, 0, 0.4); /* Lightened text background */
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color:efefef;
+            border-bottom: 2px solid #3498DB;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5rem;
+            color: #8499AF;
+        }
+        
+        .project {
+            background-color: #0D1F26;
+            border: 1px solid #3498DB;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+        }
+        
+        .project a {
+            color: #D59253;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .project a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        #skills{
+            color:white;
+        }
+        #contact{
+            color:white;
+        }
+        a{
+            color:green;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: #ECF0F1;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="name">Abungo Thokchom</h1>
+        <p class="subtitle">Full Stack Developer | MCA</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi<br>I'm Abungo Thokchom<br>A passionate full stack web developer skilled in front-end, back-end, and database technologies. Passionate about creating innovative, responsive and user-friendly web solutions.<br> Let's build something amazing together.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Analog Clock</h3>
+                <p>A simple analog clock emulation with html css and js.</p>
+                <a href="https://abungo.github.io/Analog-Clock/">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather Station</h3>
+                <p>IoT based Weather Monitoring and Visualization System" done as a minor project for MCA 5th Semester 2023 Dec.</p>
+                <a href="https://abungo.pythonanywhere.com">View Project</a>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Angular</li>
+                <li>Node.js, Express</li>
+                <li>Python, Django</li>
+                <li>SQL, MongoDB</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:abungothokchom@gmail.com">abungothokchom@gmail.com</a></p>
+            <p>Github: <a href="https://github.com/Abungo">Github Profile</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Abungo Thokchom</p>
+    </footer>
+</body>
+</html>
