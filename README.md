@@ -1,2 +1,2 @@
 # landing
-https://landing.abungo.github.io
+[https://abungo.github.io/landing/]
